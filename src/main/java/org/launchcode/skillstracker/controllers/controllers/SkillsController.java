@@ -1,4 +1,4 @@
-package org.launchcode.skillstracker.controllers;
+package org.launchcode.skillstracker.controllers.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,21 +31,21 @@ public class SkillsController {
         return "<html>" +
                     "<body>" +
                         "<form action='/results' method='post'>" +
-                            "<label for=\"name-input\">Name:</label><br>" + // submit a request to /form
+                            "<label for='name-input'>Name:</label><br>" + // submit a request to /form
                                 "<input type='text' name='name'><br>" +
-                            "<label for=\"language-select\">My favorite language:</label><br>" +
+                            "<label for='language-select'>My favorite language:</label><br>" +
                                 "<select name='firstLanguageChoice' id='language-select'>" +
                                     "<option value='Java'>Java</option>" +
                                     "<option value='JavaScript'>JavaScript</option>" +
                                     "<option value='python'>Python</option>" +
                                 "</select><br>" +
-                            "<label for=\"language-select\">My second favorite language:</label><br>" +
+                            "<label for='language-select'>My second favorite language:</label><br>" +
                                 "<select name='secondLanguageChoice' id='language-select'>" +
                                     "<option value='Java'>Java</option>" +
                                     "<option value='JavaScript'>JavaScript</option>" +
                                     "<option value='python'>Python</option>" +
                                 "</select><br>" +
-                            "<label for=\"language-select\">My third favorite language:</label><br>" +
+                            "<label for='language-select'>My third favorite language:</label><br>" +
                                 "<select name='thirdLanguageChoice' id='language-select'>" +
                                     "<option value='Java'>Java</option>" +
                                     "<option value='JavaScript'>JavaScript</option>" +
